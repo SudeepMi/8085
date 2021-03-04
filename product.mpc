@@ -8,26 +8,30 @@
 \par MOV A M
 \par MVI C 08h
 \par LXI H 0000h
+\par 
 \par LOOP: RRC
 \par JNC SKIP
 \par DAD D
+\par 
 \par SKIP: XCHG
 \par DAD H
 \par XCHG
 \par DCR C
 \par JNZ LOOP
+\par 
 \par SHLD 4000h
 \par HLT\cf0 
 \par }
 <End Codes>
 20
-1| 3000| 04
-2| 3001| 02
-3| 3002| 03
+1| 3000| 00
+2| 3001| 03
+3| 3002| 02
 4| 0000| 00
 5| 4000| 06
+6| 4001| 00
 <End UserData>
-100
+130
 1| 8000| 21
 2| 8001| 01
 3| 8002| 30
@@ -58,5 +62,6 @@
 28| 801B| 40
 29| 801C| 76
 <End HexData>
+
 
 <End Comment>
